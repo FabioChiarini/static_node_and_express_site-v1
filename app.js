@@ -30,11 +30,11 @@ app.use((err, req, res, next) => {
     res.status(err.status || 500);
     if (err.status === 404) {
         console.log('You encountered the following error: ' + err.status + ' ' + err.message);
-        res.render('error', { message: err.message, status: err.status, image: err.image} );
+        res.render('error', { message: err.message, status: err.status, image: err.image, stack: err.stack } );
     }
     else {
         console.log('You encountered the following error: 500 - INTERNAL SERVER ERROR');
-        res.render('error', { message: 'INTERNAL SERVER ERROR', status: 500, image: "/static/images/500_internal_server_error.jpg"} );
+        res.render('error', { message: 'INTERNAL SERVER ERROR', status: 500, image: "/static/images/500_internal_server_error.jpg", stack: err.stack } );
     }
 });
 
