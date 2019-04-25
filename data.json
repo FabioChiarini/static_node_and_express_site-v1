@@ -29,7 +29,7 @@
             "technologies": ["HTML", "CSS", "JavaScript", "JQuery"],
             "live_link": "https://fabiochiarini.github.io/interactive-form-v1/",
             "github_link": "https://github.com/FabioChiarini/interactive-form-v1",
-            "image_urls": ["/static/images/3_interactiveForm_landing.png", "/static/images/3_interactiveForm__1.png", "/static/images/3_interactiveForm__2.png", "/static/images/3_interactiveForm__3.png"]
+            "image_urls": ["/static/images/3_interactiveForm_landing.png", "/static/images/3_interactiveForm_1.png", "/static/images/3_interactiveForm_2.png", "/static/images/3_interactiveForm_3.png"]
         },
 
         {
