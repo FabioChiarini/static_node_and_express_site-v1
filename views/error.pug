@@ -1,9 +1,8 @@
 extends layout
 
 block content 
-    h1(style="text-align:center;")= error.message
-    h2(style="text-align:center;")= error.status
+    h1(style="text-align:center;")= message
+    h2(style="text-align:center;")= status
     p(style="text-align:center;")
-        img(src=error.image)
-    pre(style="text-align:center;")= error.stack
+        img(src=image)
 
