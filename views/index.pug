@@ -15,7 +15,7 @@ block content
       //- display images, title and add href to each project passed in from app.js   
       each project in projects
         .cell
-          a(href='/')
+          a(href='./projects/' + project.id)
             img.thumbnail(src=project.image_urls[0])
             h5= project.project_name
 
