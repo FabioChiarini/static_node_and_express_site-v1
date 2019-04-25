@@ -5,17 +5,15 @@ const app = express();
 app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
+//create routes to display index and about pages
+const mainRoutes = require('./routes');
+//create routes to display the selected project
+const projectsRoutes = require('./routes/projects');
 
-app.get('/', (req, res) => {
-    res.render('index');
+//console.log(projects_list.projects[2].image_urls[0]);
 
-});
-
-
-app.get('/about', (req, res) => {
-    res.render('about');
-
-});
+app.use(mainRoutes);
+app.use('/projects', projectsRoutes);
 
 
 app.listen(3000, () => {
